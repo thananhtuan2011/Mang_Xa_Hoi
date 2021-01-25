@@ -1,0 +1,49 @@
+<!-- 
+<div style="width:80px;height: 200px; display:flex; flex-direction:row;" >
+  
+            <div *ngFor="let item of listLoaiBai">
+                <mat-card style="width:60px;margin: 20px;">
+
+                    <span>{{item.TenLoaiPost}}</span>
+                </mat-card>
+                
+            </div>
+            
+        
+           
+</div> -->
+
+<style>
+.li:hover{
+    background-color:red;
+
+}
+</style>
+<div >
+
+
+<div class="__dialogwrapper" style="left: 382px; top: 50px;">
+    <div class="__dialogwrapper-inner" >
+        <div class="__dialogmain">
+           
+            <div class="__dialogcontent simple-form" >
+                <div id="custom-selection" class="__apdialog" title="" style="width: 602px;">
+                   <div >
+
+                  
+                    <div class="list list-action-boxes -border"  >
+                        <div class="li js-item unselectable "  *ngFor="let item of listLoaiBai" (click)="Template_LoaiBaiDang(item.Id_LoaiDang)">
+                            <div class="-icon"><img
+                                    src="{{item.Icon_BaiDang}}"></div>
+                            <div  class="label">{{item.TenLoaiDang}}</div>
+                        </div>
+
+                    </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
